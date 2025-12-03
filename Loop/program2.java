@@ -1,11 +1,13 @@
+import java.io.*;
 class LoopDemo2{
-        public static void main(String[] args){
-             
-                System.out.println("i = ");
-                for(int i = 0;i<=10;i++){
-			if(i%2==0){
-                        System.out.println(i+" is even");
-                }
+	public static void main(String[] args)throws IOException{
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
+		System.out.println("Enter the value of n: ");
+		int n = Integer.parseInt(br.readLine());
+		System.out.println("Whole number : ");
+		for(int i=0;i<=n;i++){
+			System.out.println(i);
+		}
 	}
-     }
 }
