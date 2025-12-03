@@ -1,12 +1,16 @@
 import java.io.*;
-class ForDemo6{
+class ForDemo10{
         public static void main(String[] args)throws IOException{
                 InputStreamReader isr  = new InputStreamReader(System.in);
                 BufferedReader br = new BufferedReader(isr);
                 System.out.println("Enter n : ");
                 int n = Integer.parseInt(br.readLine());
-                for(int i = n;i>=0;i--){
-			System.out.println(i);
-		}
-	}
+		int count = 0;
+                for(int i = 0;i<=n;i++){
+			if(i%2!=0){
+				count++;
+			}
+                        
+                } System.out.println(count);
+        }
 }
