@@ -1,10 +1,10 @@
+import java.lang.*;
 import java.io.*;
-class BufferedDemo1{
+class InDemo{
 	public static void main(String[] args) throws IOException{
-		InputStreamReader isr = new InputStreamReader(System.in);
-		BufferedReader br = new BufferedReader(isr);
-		System.out.println("Enter name : ");
-		String name = br.readLine();
-		System.out.println("Name : "+name);
+		System.out.println("SK");
+		int a = System.in.read();
+		System.out.println(a);
 	}
 }
+
